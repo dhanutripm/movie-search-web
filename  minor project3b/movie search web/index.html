@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSearch | Movie Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="movie-container">
+        <h1><i class="fa-solid fa-film"></i> Movie Search App</h1>
+        
+        <!-- Search Form & Input -->
+        <div class="search-box">
+            <input type="text" id="movie-input" placeholder="Search movies (e.g., Inception, Batman)...">
+            <button id="movie-search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </div>
+
+        <!-- Loading State Spinner -->
+        <div id="movie-loading" class="loader hidden">
+            <i class="fa-solid fa-spinner fa-spin"></i> Searching cinematic database...
+        </div>
+
+        <!-- Error Message Container -->
+        <div id="movie-error" class="error hidden"></div>
+
+        <!-- Dynamic Results Grid -->
+        <div id="movie-grid" class="movie-grid"></div>
+    </div>
+
+    <!-- Movie Detail Modal -->
+    <div id="movie-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body" class="modal-body-grid"></div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
+ 
